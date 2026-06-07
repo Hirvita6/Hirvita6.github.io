@@ -29,6 +29,12 @@ let changeText = ()=>{
             letter.className = "letter in";
         },340+i*80);
     });
+    
+    // Hide the previous word after its letters rotate out completely
+    setTimeout(()=>{
+        currentWord.style.opacity="0";
+    }, 340 + currentWord.children.length * 80);
+
     currentWordIndex = currentWordIndex ===maxWordIndex ? 0: currentWordIndex + 1;
 };
 

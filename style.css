@@ -42,6 +42,10 @@
     border-radius: 5rem;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--bg-color);
@@ -1472,6 +1476,21 @@ footer a i {
     :root {
         --big-font: 1.8rem;
     }
+    .change-text {
+        font-size: 1.3rem;
+    }
+    .btn-box {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .btn-box a.btn,
+    .btn-box .btn {
+        height: 45px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
     #menu-icon {
         display: block;
         transition: all .4s ease;
@@ -1524,15 +1543,23 @@ footer a i {
     }
 
     .about .img-about img {
-        max-width: 90%;
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         height: auto;
     }
 
-    .info-about1,
     .info-about2,
     .info-about3 {
         display: none;
+    }
+
+    .info-about1 {
+        display: block;
+        left: 10%;
+        top: 5%;
+    }
+    .img-about .info-about1 p {
+        font-size: 0.6rem;
     }
 
     .skill-main {
@@ -1655,6 +1682,9 @@ footer a i {
     html {
         font-size: 80%;
     }
+    .change-text {
+        font-size: 1.1rem;
+    }
 
     footer p {
         font-size: .6rem;
@@ -1665,13 +1695,22 @@ footer a i {
     }
 
     .img-about img {
-        width: 300px;
+        width: 100%;
+        max-width: 280px;
     }
 
-    .info-about1,
     .info-about2,
     .info-about3 {
         display: none;
+    }
+
+    .info-about1 {
+        display: block;
+        left: 5%;
+        top: 2%;
+    }
+    .img-about .info-about1 p {
+        font-size: 0.55rem;
     }
 
     .img-about p {
